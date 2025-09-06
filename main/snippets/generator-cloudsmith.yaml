@@ -8,6 +8,7 @@ spec:
   orgSlug: "my-organization"
   serviceSlug: "my-oidc-service"
   serviceAccountRef:
-    name: "cloudsmith-service-account"
+    name: "default"
+    namespace: "default"
     audiences:
       - "https://api.cloudsmith.io"
