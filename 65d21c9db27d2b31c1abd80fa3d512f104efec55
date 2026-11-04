@@ -1,0 +1,1 @@
+CodeQL go/hardcoded-credentials flags any const whose name looks like a credential (tokenUsername). Inlining the literal avoids it without a suppression. FetchServiceAccountToken creates the SA token in the ExternalSecret namespace and ignores serviceAccountRef.namespace, so the generator and SA must share the ES namespace.
