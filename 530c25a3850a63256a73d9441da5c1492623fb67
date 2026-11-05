@@ -1,0 +1,1 @@
+Argo CD matches a type: oci repository secret on the exact URL, so a host-only URL (oci://helm.oci.cloudsmith.io) gives no credentials to an Application. Cloudsmith Helm OCI path is OWNER/REPOSITORY; the chart name follows. A repo-creds secret with prefix matching is the alternative for many charts; not shown to keep the example small.
